@@ -13,11 +13,12 @@ const useState = (initialValue) => {
   return [_count, setValue];
 };
 
-const MyComponent = () => {
+const MyComponent2 = () => {
   const [count, setCount] = useState(0);
 
   return (
     <div>
+      <h1>useState v1</h1>
       <span>{count}</span>
       <br />
       <button
@@ -31,10 +32,4 @@ const MyComponent = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-
-const render = () => {
-  ReactDOM.render(<MyComponent />, rootElement);
-};
-
-render();
+export default MyComponent2;

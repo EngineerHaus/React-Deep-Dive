@@ -1,12 +1,13 @@
 let counter = 0;
 
-const MyComponent = () => {
+const MyComponent1 = () => {
   const handleClick = () => {
     counter += 1;
   };
 
   return (
     <div>
+      <h1>handleClick</h1>
       <span>{counter}</span>
       <br />
       <button
@@ -21,10 +22,4 @@ const MyComponent = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-
-const render = () => {
-  ReactDOM.render(<MyComponent />, rootElement);
-};
-
-render();
+export default MyComponent1;

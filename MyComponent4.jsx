@@ -19,12 +19,13 @@ const useState = (initialValue) => {
   return [_counts[currentCallIndex], setValue];
 };
 
-const MyComponent = () => {
+const MyComponent4 = () => {
   const [countA, setCountA] = useState(0);
   const [countB, setCountB] = useState(0);
 
   return (
     <div>
+      <h1>useState v3</h1>
       <span>{countA}</span>
       <br />
       <button
@@ -48,11 +49,4 @@ const MyComponent = () => {
   );
 };
 
-const rootElement = document.getElementById("root");
-
-const render = () => {
-  callIndex = -1;
-  ReactDOM.render(<MyComponent />, rootElement);
-};
-
-render();
+export default MyComponent4;
