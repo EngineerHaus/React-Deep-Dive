@@ -13,7 +13,7 @@ const root = createRoot(container);
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Navigate to="/4" replace />} />
+      <Route path="/" element={<Navigate to="/5" replace />} />
       <Route path="/1" element={<MyComponent1 />} />
       <Route path="/2" element={<MyComponent2 />} />
       <Route path="/3" element={<MyComponent3 />} />
