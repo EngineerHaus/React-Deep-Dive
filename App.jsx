@@ -1,10 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import MyComponent1 from './MyComponent1';
-import MyComponent2 from './MyComponent2';
-import MyComponent3 from './MyComponent3';
-import MyComponent4 from './MyComponent4';
+import MyComponent1 from './useState/MyComponent1';
+import MyComponent2 from './useState/MyComponent2';
+import MyComponent3 from './useState/MyComponent3';
+import MyComponent4 from './useState/MyComponent4';
 
 const App = () => {
   const [view, setView] = React.useState('v1');
