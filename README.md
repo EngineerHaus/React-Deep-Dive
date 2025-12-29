@@ -1,4 +1,4 @@
-# ✅ 8주차 스터디 운영 방식
+# ✅ 12주차 스터디 운영 방식
 
 ---
 
@@ -57,7 +57,9 @@
 
    - React가 왜 Fiber를 사용하는지 감을 잡기
 
-## **W3. useEffect 알아보기**
+## **W3. useState 총 정리**
+
+## **W4. useEffect 알아보기**
 
 **목표:** useEffect의 타이밍, dependency array 동작, 클린업 개념 명확화
 
@@ -84,7 +86,7 @@
 
    - “렌더링과 사이드이펙트의 분리” 철학 이야기
 
-## **W4. useEffect 직접 구현해보기**
+## **W5. useEffect 직접 구현해보기**
 
 **목표:** 간단한 Effect 시스템 구현
 
@@ -111,7 +113,9 @@
 
    - React가 commit phase를 분리한 이유 직관적으로 이해
 
-## **W5. useRef 알아보기**
+## **W6. useEffect 총 정리**
+
+## **W7. useRef 알아보기**
 
 **목표:** useRef의 특징, mutable object, re-render 비발생 구조 이해
 
@@ -132,7 +136,7 @@
    - timeout ID 저장
    - 이전 값 기억하는 usePrevious 만들어 보기
 
-## **W6. useRef 직접 구현해보기**
+## **W8. useRef 직접 구현해보기**
 
 **목표:** 간단한 ref 시스템 설계
 
@@ -152,7 +156,9 @@
 
    - 기존에 만든 useState/useEffect mini-react에 useRef 추가하기
 
-## **W7. SSR 알아보기**
+## **W9. useRef 총 정리**
+
+## **W10. SSR 알아보기**
 
 **목표:** SSR의 동작 원리 전반 이해
 
@@ -174,7 +180,7 @@
 
    - ReactDOMServer.renderToString 간단 테스트
 
-## **W8. 프레임워크 없이 SSR 구현해보기**
+## **W11. 프레임워크 없이 SSR 구현해보기**
 
 **목표:** React 없이 직접 SSR 구조 구현
 
@@ -203,3 +209,5 @@
 4. **회고**
 
    - React/Next가 해결하는 문제들의 깊은 이해
+  
+## **W12. SSR 총 정리 및 스터디 마무리**
