@@ -4,6 +4,11 @@ let callIndex = -1;
 
 let _counts = [];
 
+export const clearState = () => {
+  _counts = [];
+  callIndex = -1;
+};
+
 export const resetCallIndex = () => {
   callIndex = -1;
 };
