@@ -1,0 +1,51 @@
+let callIndex = -1;
+
+let _counts = [];
+
+const useState = (initialValue) => {
+  callIndex++;
+
+  const currentCallIndex = callIndex;
+
+  if (_counts[currentCallIndex] === undefined) {
+    _counts[currentCallIndex] = initialValue;
+  }
+
+  const setValue = (newValue) => {
+    _counts[currentCallIndex] = newValue;
+  };
+
+  return [_counts[currentCallIndex], setValue];
+};
+
+const MyComponent4 = () => {
+  const [countA, setCountA] = useState(0);
+  const [countB, setCountB] = useState(0);
+
+  return (
+    <div>
+      <h1>useState v3</h1>
+      <span>{countA}</span>
+      <br />
+      <button
+        onClick={() => {
+          setCountA(countA + 1);
+        }}
+      >
+        Increment A
+      </button>
+      <br />
+      <span>{countB}</span>
+      <br />
+      <button
+        onClick={() => {
+          setCountB(countB + 1);
+        }}
+      >
+        Increment B
+      </button>
+    </div>
+  );
+};
+
+export default MyComponent4;
