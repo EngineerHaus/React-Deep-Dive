@@ -1,26 +1,8 @@
-let callIndex = -1;
-
-let _counts = [];
-
-const useState = (initialValue) => {
-  callIndex++;
-
-  const currentCallIndex = callIndex;
-
-  if (_counts[currentCallIndex] === undefined) {
-    _counts[currentCallIndex] = initialValue;
-  }
-
-  const setValue = (newValue) => {
-    _counts[currentCallIndex] = newValue;
-  };
-
-  return [_counts[currentCallIndex], setValue];
-};
+import { myUseState } from '../src/myUseState';
 
 const MyComponent4 = () => {
-  const [countA, setCountA] = useState(0);
-  const [countB, setCountB] = useState(0);
+  const [countA, setCountA] = myUseState(0);
+  const [countB, setCountB] = myUseState(0);
 
   return (
     <div>
