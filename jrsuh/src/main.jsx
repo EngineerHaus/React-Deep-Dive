@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
+import Page from "./useEffect/App";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-root.render(<h1>Hello React with Vite</h1>);
+root.render(<Page />);
